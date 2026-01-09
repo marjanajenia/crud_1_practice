@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Mail;
 class SendInactiveUserReminder implements ShouldQueue
 {
     use Queueable;
+    protected $user;
 
     /**
      * Create a new job instance.
